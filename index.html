@@ -75,40 +75,8 @@
                 </div>
                 <nav class="style_mobileNav__ljTzP style_hidden__Bsr7r">
                     <ul>
-                        <li class="style_mobilesubmenu___c2ly"><a class="style_mobilesublink__wnfwi"
-                                href="ludo.html"><img alt="ludo" loading="lazy" width="40" height="40" decoding="async"
-                                    data-nimg="1" style="color:transparent"
-                                    src="images/01-Ludo-Game-Icon-with-round-corner-2.webp"><span>Ludo</span></a>
-                            <ul>
-                                <li><a class="style_mobilesubItem__w_G5a" href="#"><img alt="ludo supreme"
-                                            loading="lazy" width="40" height="40" decoding="async" data-nimg="1"
-                                            style="color:transparent" src="images/01-Ludo_supreme.webp"><span>Ludo
-                                            Supreme</span></a></li>
-                                <li><a class="style_mobilesubItem__w_G5a" href="#"><img alt="ludo supreme leauge"
-                                            loading="lazy" width="40" height="40" decoding="async" data-nimg="1"
-                                            style="color:transparent"
-                                            src="images/01-Ludo-Supreme-League-menu-icon.webp"><span>Ludo Supreme
-                                            League</span></a></li>
-                                <li><a class="style_mobilesubItem__w_G5a" href="#"><img alt="ludo turbo" loading="lazy"
-                                            width="40" height="40" decoding="async" data-nimg="1"
-                                            style="color:transparent" src="images/01-Ludo_turbo.webp"><span>Ludo
-                                            Turbo</span></a></li>
-                                <li><a class="style_mobilesubItem__w_G5a" href="#"><img alt="ludo ninja" loading="lazy"
-                                            width="40" height="40" decoding="async" data-nimg="1"
-                                            style="color:transparent" src="images/01-Ludo_ninja.webp"><span>Ludo
-                                            Ninja</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="style_mobilesubmenu___c2ly"><a class="style_mobilesublink__wnfwi" href="#"><img
-                                    alt="snake and ladders plus" loading="lazy" width="40" height="40" decoding="async"
-                                    data-nimg="1" style="color:transparent" src="images/01-SnL.webp"><span>Snakes and
-                                    Ladders Plus</span></a></li>
-                        <li class="style_mobilesubmenu___c2ly"><a class="style_mobilesublink__wnfwi" href="#"><img
-                                    alt="trump cards mania" loading="lazy" width="40" height="40" decoding="async"
-                                    data-nimg="1" style="color:transparent"
-                                    src="images/01-trump-card-mania-icon-01.webp"><span>Trump Cards Mania</span></a>
-                        </li>
-                        <li class="style_mobilesubmenu___c2ly"><a class="style_mobilesublink__wnfwi"
+                        <li class="style_mobilesubmenu___c2ly"
+                        style="border-bottom: 1px solid #d3d3d3;"><a class="style_mobilesublink__wnfwi"
                                 href="#"><span>About Us</span></a></li>
                         <li class="style_mobilesubmenu___c2ly"><a class="style_mobilesublink__wnfwi"
                                 href="#"><span>Blog</span></a></li>
@@ -2225,6 +2193,21 @@
         });
 
     </script>
+    <script>
+        const style_mobileNav__ljTzP = document.querySelector('.style_mobileNav__ljTzP');
+        const style_hamburgerMenu__SPPBd = document.querySelector('.style_hamburgerMenu__SPPBd');
+    
+        style_hamburgerMenu__SPPBd.addEventListener('click', () => {
+            if (style_mobileNav__ljTzP.classList.contains('style_show__7m2gC')) {
+                style_mobileNav__ljTzP.classList.remove('style_show__7m2gC');
+                style_mobileNav__ljTzP.classList.add('style_hidden__Bsr7r');
+            } else {                
+                style_mobileNav__ljTzP.classList.add('style_show__7m2gC');
+                style_mobileNav__ljTzP.classList.remove('style_hidden__Bsr7r');
+            }
+        });
+    </script>
+    
     <!-- <script src="https://assets.zupee.com/_next/static/chunks/fd9d1056-9589f899be2b0da9.js"></script> -->
 </body>
 
